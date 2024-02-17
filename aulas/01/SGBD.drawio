@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
-    <diagram id="uScAmd6LnofazD-4qTIN" name="Page-1">
-        <mxGraphModel dx="878" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <diagram id="wAmoMdmtq_BD5EdNr2UT" name="Page-1">
+        <mxGraphModel dx="496" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -135,7 +135,7 @@
                     <mxGeometry x="580" y="590" width="220" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" value="Fluxo de um SGBD" style="swimlane;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
-                    <mxGeometry y="750" width="820" height="350" as="geometry"/>
+                    <mxGeometry y="740" width="850" height="360" as="geometry"/>
                 </mxCell>
                 <mxCell id="37" value="" style="edgeStyle=none;html=1;startArrow=classic;startFill=1;" edge="1" parent="36" source="38" target="42">
                     <mxGeometry relative="1" as="geometry"/>
