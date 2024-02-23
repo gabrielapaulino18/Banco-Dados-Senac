@@ -1,7 +1,3 @@
-CREATE DATABASE compras;
-
-USE compras;
-
 CREATE TABLE Cliente (
     ClienteID INT PRIMARY KEY,
     Nome VARCHAR(50),
@@ -24,7 +20,7 @@ CREATE TABLE Pedido (
 CREATE TABLE ItensPedido (
     PedidoID INT,
     ProdutoID INT,
-    Quantidade INT,USE compras;
+    Quantidade INT,
     PRIMARY KEY(PedidoID, ProdutoID),
     FOREIGN KEY (PedidoID) REFERENCES Pedido(PedidoID),
     FOREIGN KEY (ProdutoID) REFERENCES Produto(ProdutoID)
