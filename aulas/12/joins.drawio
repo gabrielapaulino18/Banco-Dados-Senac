@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="Lzm157s3KApah2dHZ9pS" name="Página-1">
+        <mxGraphModel dx="355" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="8" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=50;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="40" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="40" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;h1&gt;LEFT E RIGHT&lt;/h1&gt;&lt;p&gt;Ao selecionar uma tabela para uma relação inicial (SELECT * FROM TABELA), entenda essa como a tabela da esquerda (left).&lt;br&gt;A tabela a ser associada (JOIN TABELA), será a da direita (right)&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="30" width="250" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=none;opacity=50;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="200" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="200" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 8px; background-color: rgb(0, 255, 0);&quot;&gt;INNER&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="245" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;h1&gt;INNER JOIN&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="200" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#000000;strokeWidth=1;perimeterSpacing=0;opacity=60;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="360" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#FFFF66;opacity=50;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="360" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 8px; background-color: rgb(0, 255, 0);&quot;&gt;INNER&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="405" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;h1&gt;FULL JOIN&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="360" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="LEFT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FF3399;strokeColor=#FFFFFF;opacity=50;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="520" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="RIGHT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FF3399;strokeColor=#FFFFFF;opacity=50;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="520" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 8px; background-color: rgb(0, 255, 0);&quot;&gt;INNER&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="565" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;h1&gt;RIGHT JOIN&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="520" width="190" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
