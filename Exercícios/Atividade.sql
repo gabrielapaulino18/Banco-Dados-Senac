@@ -1,5 +1,3 @@
-DROP SCHEMA gestaoacademica;
-
 -- 1. Selecionar todos os alunos
 
 SELECT * FROM aluno;
@@ -57,8 +55,7 @@ INNER JOIN aluno ON Aluno_ID = Aluno.Matricula;
 
 -- 9. Contar quantos alunos se matricularam em cada curso
 
-SELECT Aluno.Nome AS Aluno, Curso.Nome AS Curso, COUNT(*) AS TotalAlunos
-FROM Matricula 
-RIGHT JOIN ALUNO ON Aluno_ID = Aluno.id
-INNER JOIN CURSO ON Matricula.Curso_ID = Curso.Id
-GROUP BY Curso;
+SELECT Curso.Nome AS Curso, COUNT(*) AS TotalAlunos
+FROM matricula
+JOIN curso ON Matricula.Curso_ID = Curso.Id
+GROUP BY Curso.Nome;
