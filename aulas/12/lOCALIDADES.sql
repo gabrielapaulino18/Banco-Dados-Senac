@@ -63,16 +63,8 @@ INSERT INTO PREFEITO (Nome, DataPosse) VALUES
    
     
 UPDATE Cidade 
-SET Prefeito_ID = 2
-WHERE ID = 5;
-
-UPDATE Cidade 
-SET Prefeito_ID = 3
-WHERE ID = 4;
-
-UPDATE Cidade 
-SET Prefeito_ID = 2
-WHERE ID = 3;
+SET Prefeito_ID = 1
+WHERE ID = 1;
 
 UPDATE Cidade 
 SET Prefeito_ID = 1
@@ -80,10 +72,18 @@ WHERE ID = 2;
 
 UPDATE Cidade 
 SET Prefeito_ID = 2
-WHERE ID = 1;
+WHERE ID = 3;
 
 UPDATE Cidade 
-SET Prefeito_ID = 1
+SET Prefeito_ID = 2
+WHERE ID = 4;
+
+UPDATE Cidade 
+SET Prefeito_ID = 3
+WHERE ID = 5;
+
+UPDATE Cidade 
+SET Prefeito_ID = 3
 WHERE ID = 6;
 	
 SELECT * FROM prefeito;
@@ -94,3 +94,24 @@ SELECT CIDADE.Nome AS Cidade, Prefeito.Nome AS Prefeito, Estado.uf AS UF
 FROM CIDADE
 LEFT JOIN  PREFEITO ON CIDADE.Prefeito_ID = PREFEITO.ID
 INNER JOIN ESTADO ON Cidade.Estado_ID = ESTADO.ID;
+
+SELECT cidade.nome, estado.uf
+FROM CIDADE
+LEFT JOIN ESTADO
+ON CIDADE.ESTADO_ID = ESTADO.ID
+
+UNION
+
+SELECT cidade.nome, estado.uf
+FROM CIDADE
+LEFT JOIN ESTADO
+ON CIDADE.ESTADO_ID = ESTADO.ID;
+
+SELECT * FROM ESTADO;
+
+INSERT INTO ESTADO(Nome, Uf) VALUES ('Sergipe', 'SE');
+
+-- SELECT CIDADE.NOME, CIDADE.PREFEITO, ESTADO.NOME
+-- FROM CIDADE
+-- INNER JOIN ESTADO ON CIDADE
+
