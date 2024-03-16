@@ -177,46 +177,69 @@ JOIN ItemPedido ON Pedido.Id = ItemPedido.PedidoID
 JOIN Produto ON ItemPedido.ProdutoID = Produto.Id;
 
 -- 3. Selecione todos os produtos, mesmo aqueles que não têm uma categoria associada:
-
+SELECT Produto.Nome AS NomeProduto, Categoria.Nome AS Categoria
+FROM Produto
+LEFT JOIN Categoria ON Produto.CategoriaID = Categoria.Id;
 
 -- 4. Selecione todos os clientes, mesmo aqueles que não fizeram nenhum pedido:
-
+SELECT Cliente.Nome AS NomeCliente, Pedido.Status
+FROM Cliente
+LEFT JOIN Pedido ON Cliente.Id = Pedido.ClienteID; 
 
 -- 5. Selecione todas as categorias, mesmo aquelas que não têm produtos associados:
-
+SELECT Categoria.Nome AS Categoria, Produto.Nome AS NomeProduto
+FROM Categoria
+LEFT JOIN Produto ON Categoria.Id = Produto.CategoriaID;
 
 -- 6. Selecione todos os produtos, mesmo aqueles que não foram pedidos:
-
+SELECT Produto.Nome AS NomeProduto, Pedido.Status
+FROM Produto
+LEFT JOIN ItemPedido ON Produto.Id = ItemPedido.ProdutoID
+LEFT JOIN Pedido ON ItemPedido.PedidoID = Pedido.Id;
 
 
 ############### DQL com joins e demais filtros
 -- 1. Selecione o nome da categoria e o número de produtos nessa categoria, apenas para categorias com mais de 5 produtos:
-
+-- Não consegui desenvolver essa
 
 -- 2. Selecione o nome do cliente e o total de pedidos feitos por cada cliente:
-
+SELECT Cliente.Nome AS NomeCliente, COUNT(Pedido.Id) AS TotalPedidos
+FROM Cliente
+LEFT JOIN Pedido ON Cliente.Id = Pedido.ClienteID
+GROUP BY Cliente.Id;
 
 -- 3. Selecione o nome do produto, o nome da categoria e a quantidade total de vendas para cada produto:
-
+SELECT Produto.Nome AS NomeProduto, Categoria.Nome AS NomeCategoria, SUM(ItemPedido.Quantidade) AS QuantidadeTotalVendas
+FROM Produto
+LEFT JOIN Categoria ON Produto.CategoriaID = Categoria.Id
+LEFT JOIN ItemPedido ON Produto.Id = ItemPedido.ProdutoID
+GROUP BY Produto.Id;
 
 -- 4. Selecione o nome da categoria, o número total de produtos nessa categoria e o número de pedidos para cada categoria:
-
+-- Não consegui desenvolver essa
 
 -- 5. Selecione o nome do cliente, o número total de pedidos feitos por esse cliente e a média de produtos por pedido, apenas para clientes que tenham feito mais de 3 pedidos:
-
+-- Não consegui desenvolver essa
 
 ##### Crie uma View qualquer para qualquer um dos joins desenvolvidos
 
 ##### Crie uma transaction que cadastra um cliente e faça uma venda
 -- Início da transação
+START TRANSACTION;
 
 -- Inserir um novo cliente
+INSERT INTO Cliente (Nome, Email, Telefone) VALUES 
+	('Rafael Mesquita', 'rafael@example.com', '88888888888');
 
 
 -- Inserir um novo pedido para o cliente
-
+INSERT INTO Pedido (ClienteID, DataPedido, FormaPagamento, Status, UsuarioAtualizacao) VALUES 
+	(7, '2024-03-15 19:30:00', 5, 'Concluído', 1);
 
 -- Inserir itens no pedido
-
+INSERT INTO ItemPedido (PedidoID, ProdutoID, Quantidade, UsuarioAtualizacao)VALUES 
+    (4, 2, 1, 5);
+    
 
 -- Commit da transação (confirmação das alterações)
+COMMIT;
